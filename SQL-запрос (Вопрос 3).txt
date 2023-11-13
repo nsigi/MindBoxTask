@@ -1,0 +1,3 @@
+SELECT Products.name AS ProductName, Category.name AS CategoryName FROM Product as Products
+LEFT JOIN Relation ON Products.id = Relation.products_id
+LEFT JOIN Category ON Category.id = Relation.category_id;
